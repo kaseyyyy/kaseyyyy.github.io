@@ -1,0 +1,105 @@
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const langEl = document.querySelector('.langWrap');
+    const links = document.querySelectorAll('.langs a'); // Updated selector
+    const mainTitleEl = document.querySelector('.txt');
+    const mainDescrEl = document.querySelector('.description');
+    const navbarLinks = document.querySelectorAll('.snavbar a');
+    const shortTitleEl = document.querySelector('.short-txt h1');
+    const shortDescrEl = document.querySelector('.short-txt .c ol');
+
+    const readMoreText = document.querySelector('.short-txt .read-more-text');
+    links.forEach(link => {
+      link.addEventListener('click', (event) => {
+        event.preventDefault();
+        langEl.querySelector('.active').classList.remove('active');
+        link.classList.add('active');
+
+        const attr = link.getAttribute('language');
+
+        titleEl.textContent = data[attr].title;
+        descrEl.innerHTML = data[attr].description;
+        titleEl.textContent = data[attr].short.title;
+        // Populate list items
+        descrEl.innerHTML = data[attr].short.includes.map(item => `<li>${item}</li>`).join('');
+        shortTitleEl.textContent = data[attr].short.title;
+        shortDescrEl.innerHTML = data[attr].short.includes.map(item => `<li>${item}</li>`).join('');
+
+        // Update navbar translations
+        navbarLinks.forEach(navLink => {
+          const navAttr = navLink.getAttribute('href').substring(1); // Remove the '#' from href
+          navLink.textContent = data[attr].navbar[navAttr];
+        });
+        if (data[attr].short.details) {
+          const detailsContent = data[attr].short.details.content.map(item => `<li>${item}</li>`).join('');
+          readMoreText.innerHTML = `<h3>${data[attr].short.details.title}</h3><div class="d"><ol>${detailsContent}</ol></div>`;
+        }
+      });
+    });
+  });
+
+  var data = {
+    "english": {
+      "title": "Services",
+      "description": "Heyyo everybody! It's Ichiroku here - a singing deer dragon who makes music Welcome to my website!  I speak fluent English and Chinese!中文的大家來 >>> 這邊DM me in Twitter or E-mail me if you have any inquiries",
+      "navbar": {
+        "short": "Short",
+        "medium": "Medium",
+        "long": "Long",
+        "BGM": "BGM Rearrangement",
+        "ori": "Original Song",
+        "Cover": "Cover Rearrangement/Remake",
+        "mix": "Speech/Voice Mixing",
+        "smix": "Song Mixing (Solo)"
+      },
+      "short": {
+        "title": "BGM Composition and Arrangement",
+        "subtitle": "Short (i.e. One Chorus)",
+        "price": "From MYR 311.97",
+        "includes": [
+          "Original instrumental music. Loopable or non-loopable.",
+          "For BGMs, jingles, lore, etc",
+          "A memorable melody line (very useful for leitmotif)",
+           "(Leitmotif : a recurrent theme throughout a musical or literary composition, associated with a particular person, idea, or situation.)",
+          "Any style",
+          "Exclusive license",
+          "Can choose between LOOP or ONE-SHOT",
+            "*LOOP = The music repeats itself perfectly without anyone noticing it's repeating.",
+            "*ONE-SHOT = The music will end properly to complete silence before it starts to play again."
+        ],
+
+        "details": {
+          "title": "Details",
+          "content": [
+            ".mp3 and .wav format",
+            "One Chorus is around 16 bars or 30 seconds",
+            // ... (other details)
+          ]
+        },
+        "add-ons": {
+          "title": "Add-ons",
+          "content": [
+            "x2 price for Buyout: You get the rights to use the music/song in any way you like, including uploads to music streaming services without additional financial compensation. (credit is required).",
+            // ... (other add-ons)
+          ]
+        },
+      }
+    },
+
+    "chinese": {
+      "title": "一六服务",
+      "description": "嘿大家！是我，一六喲！一隻喜歡唱歌做音樂的鹿龍喲！",
+      "navbar": {
+        "short": "短",
+        "medium": "中等",
+        "long": "長",
+        "BGM": "BGM 重新排列",
+        "ori": "原創歌曲",
+        "Cover": "Cover 重新排列/重製",
+        "mix": "演講/聲音混音",
+        "smix": "歌曲混音（獨唱）"
+      }
+    }
+  };
+
+</script>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ichiroku一六</title>
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://kit.fontawesome.com/7ce7078a2e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div id="nav">
+          <p class="logo">i C H i R O K U 1-6</p>
+          <div class="navbar">
+            <a href="index.html">Home</a>
+                <a href="commissions.html">Commissions</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="contact.html">Contact</a>
+                <a href="b4.html">Pre-Inquiry</a>
+          </div>
+          <div class="langWrap">
+            <div class="langs">
+              <a href="#" language="english" class="active">EN</a>
+              /
+              <a href="#" language="chinese">CN</a>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="banner5">
+        <div class="header-txt5">
+          <p class="txt4" id="contact-text">Contact</p>
+          <p class="description"> 
+          </p>
+        </div>
+      </div>
+      <h1 id="tt-heading" class="tt">You can inquire or commission us through the following!</h1>
+
+      <div class="ichiroku">
+      <img src="images/image.png" alt="16">
+    </div>
+    <h2 class="name">ichiroku一六</h2>
+    <p class="twi" id="twitter-text">Twitter: <a href="https://twitter.com/Ichiroku16_Vt" id="twitter-link">https://twitter.com/Ichiroku16_Vt</a></p>
+    <p class="twi" id="facebook-text">Facebook: <a href="https://www.facebook.com/profile.php?id=100074360709857" id="facebook-link">https://www.facebook.com/profile.php?id=100074360709857</a></p>
+ <div class="bt">
+
+ </div>
+
+ <footer>
+    <div class="footer-class">
+      <img class='flogo' src="images/logo.jpg" alt="logo">
+  
+      <br>
+      <hr class="hr">
+      <div class="ft">
+        &copy; <span id="currentYear"></span> Mugen Project Studio All Rights Reserved.
+        <br>
+  
+        <a href="pp.html">Privacy Policy</a>
+        <p class="BigPAU">Build by BigPAU</p>
+      </div>
+  
+    </div>
+  </footer>
+  <script>
+ document.addEventListener('DOMContentLoaded', () => {
+  const langEl = document.querySelector('.langWrap');
+        const links = document.querySelectorAll('.langs a');  
+
+            const contactText = document.getElementById('contact-text');
+            const ttHeading = document.getElementById('tt-heading');
+            const twitterText = document.getElementById('twitter-text');
+            const facebookText = document.getElementById('facebook-text');
+
+
+            links.forEach(link => {
+                link.addEventListener('click', (event) => {
+                    event.preventDefault();
+                    langEl.querySelector('.active').classList.remove('active');
+                    link.classList.add('active');
+                    const attr = link.getAttribute('language');
+                contactText.textContent = data[attr]['contact-text'];
+                ttHeading.textContent = data[attr]['tt-heading'];
+                twitterText.innerHTML = data[attr]['twitter-text'];
+                    facebookText.innerHTML = data[attr]['facebook-text'];
+           
+                });
+            });
+        });
+
+        var data = {
+            "english": {
+               
+                "contact-text": "Contact",
+                "tt-heading": "You can inquire or commission us through the following!",
+                "twitter-text": "X (Twitter): <a href='https://twitter.com/Ichiroku16_Vt' id='twitter-link'>https://twitter.com/Ichiroku16_Vt</a>",
+                "facebook-text": "Facebook: <a href='https://www.facebook.com/profile.php?id=100074360709857' id='facebook-link'>https://www.facebook.com/profile.php?id=100074360709857</a>"
+     
+               },
+            "chinese": {
+             
+                "contact-text": "聯絡方式",
+                "tt-heading": "您可以通過以下方式向我們詢問或委託！",
+                "twitter-text": "X (推特)：<a href='https://twitter.com/Ichiroku16_Vt' id='twitter-link'>https://twitter.com/Ichiroku16_Vt</a>",
+                "facebook-text": "脸书 (非死不可)：<a href='https://www.facebook.com/profile.php?id=100074360709857' id='facebook-link'>https://www.facebook.com/profile.php?id=100074360709857</a>"
+        
+              },
+        };
+  </script>
+</body>
+</html>
