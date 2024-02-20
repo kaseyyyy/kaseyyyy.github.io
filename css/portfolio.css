@@ -1,0 +1,300 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.langs{
+    font-family: 'OCR A', monospace;
+    color: #000000;
+    text-decoration: none;
+    padding: 40px 10px;
+    font-size: 30px;
+}
+.langs a{
+
+text-decoration: none;
+
+}
+.langs.active{
+background-color: red;
+}
+.logo{
+    background: linear-gradient(to right, 
+    rgb(89, 242, 142) 0%,         /* Left: rgba(42,179,237,255) */
+    rgb(75, 248, 116) 20%,        /* Mid-left: rgba(94,156,242,255) */
+    rgb(50, 238, 56) 40%,       /* Middle: rgba(127,143,245,255) */
+    rgb(50, 208, 74) 60%,       /* Mid-right: rgba(167,119,245,255) */
+    rgb(0, 143, 12) 100%        /* Right: rgba(199,97,247,255) */
+    );
+      /* you can change the colors based on your preference */
+      background-clip: text;
+      /*add this line, it defines how far the background should extend within an element, here we set it to text */
+      -webkit-background-clip: text;
+      /* add this line, for browsers compatibility */
+      -webkit-text-fill-color: transparent;
+      padding: 1px 30px;
+      margin-left: 50px;
+      text-decoration: none;
+      font-family: 'OCR A', monospace;
+      font-size: 35px;
+    font-weight: bold;
+}
+.title{
+    margin-top: 20px;
+}
+#nav{
+    display: flex;
+    background-color: #ffffff;
+    
+    
+}
+.navbar{
+    text-decoration: none;
+    font-family: 'OCR A', monospace;
+    font-size: 20px;
+    font-weight: bold;
+    background: linear-gradient(to right, 
+    rgb(89, 242, 142) 0%,         /* Left: rgba(42,179,237,255) */
+    rgb(75, 248, 116) 20%,        /* Mid-left: rgba(94,156,242,255) */
+    rgb(50, 238, 56) 40%,       /* Middle: rgba(127,143,245,255) */
+    rgb(50, 208, 74) 60%,       /* Mid-right: rgba(167,119,245,255) */
+    rgb(0, 143, 12) 100%        /* Right: rgba(199,97,247,255) */
+    );
+    /* you can change the colors based on your preference */
+    background-clip: text;
+    /*add this line, it defines how far the background should extend within an element, here we set it to text */
+    -webkit-background-clip: text;
+    /* add this line, for browsers compatibility */
+    -webkit-text-fill-color: transparent;
+}
+.navbar a{
+    text-decoration: none;
+    display: inline-block;
+    list-style: none;
+    padding: 50px 30px;
+}
+.banner3{
+
+    width: 100%;
+    height: 70vh;
+        position: relative;
+}
+.banner3::before{
+    background-image: url('../images/work-1.jpg');
+    background-size: cover;
+    content: '';
+    position: absolute;
+    inset: 0;
+    filter: brightness(50%);
+}
+.header-txt3{
+    margin-left: 15%;
+    
+    padding: 70px 0px;
+    }
+.txt2{
+    isolation: isolate;
+    color: white;
+    font-size: 90px;
+    letter-spacing: 10px;
+    font-family: 'OCR A', monospace;
+    border-radius: 5px solid;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: 
+    typing 3s steps(30),
+    cursor .9s step-end infinite alternate;
+}
+@keyframes cursor{
+    50% { border-color: transparent;}
+}
+@keyframes typing{
+    from { width: 0 } 
+}
+#snav{
+    
+    background-color: black;
+   
+}
+.snavbar{
+  
+    padding-top: 40px;
+    padding-bottom: 60px;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'OCR A', monospace;
+    font-size: 30px;
+   /* background: linear-gradient(to right, 
+    rgb(89, 242, 142) 0%,         /* Left: rgba(42,179,237,255) */
+  /*    rgb(75, 248, 116) 20%,        /* Mid-left: rgba(94,156,242,255) */
+  /*    rgb(50, 238, 56) 40%,       /* Middle: rgba(127,143,245,255) */
+  /*    rgb(50, 208, 74) 60%,       /* Mid-right: rgba(167,119,245,255) */
+  /*    rgb(0, 143, 12) 100%        /* Right: rgba(199,97,247,255) */
+  /*    );
+    /* you can change the colors based on your preference */
+   /*   background-clip: text;
+    /*add this line, it defines how far the background should extend within an element, here we set it to text */
+    /*  -webkit-background-clip: text;
+    /* add this line, for browsers compatibility 
+     -webkit-text-fill-color: transparent;*/
+}
+
+.snavbar a{
+    
+    border: 2px solid rgb(31, 212, 113); /* Initial border color */
+    outline: none;
+    font-size: 18px;
+   display: flex;
+    text-decoration: none;
+    display: inline-block;
+    list-style: none;
+    padding: 10px 10px;
+    font-weight: bold;
+    transition: background 0.3s ease, border 0.3s ease, color 0.3s ease; /* Add transition for background, border, and text color */
+    color: rgb(95, 169, 90); /* Set the default text color */
+}
+.snavbar a:hover{
+    color: black;
+    background: linear-gradient(to right, 
+    rgb(0, 143, 12) 0%,
+    rgb(50, 208, 74) 20%,
+    rgb(50, 238, 56) 40%, 
+    rgb(75, 248, 116) 60%, 
+     rgb(89, 242, 142) 100%         /* Left: rgba(42,179,237,255) */
+           /* Mid-left: rgba(94,156,242,255) */
+          /* Middle: rgba(127,143,245,255) */
+           /* Mid-right: rgba(167,119,245,255) */
+           /* Right: rgba(199,97,247,255) */
+    );
+    border-color: rgb(0, 143, 12);
+    
+    /* you can change the colors based on your preference */
+  
+}
+h1{
+    margin-left: 15%;
+    padding-top: 50px;
+    font-weight: bold;
+    color: green;
+}
+.vtitle{
+ font-size: 18px;
+ font-weight: bold;
+    color: green;
+}
+.port{
+    margin-top: -40px;
+    font-family: 'OCR A', monospace;
+    color: white;
+    width: 100%;
+    position: relative;
+}
+.port::before{
+    background-image: url('/images/1banner.jpeg');
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    content: '';
+    inset: 0;
+    filter: brightness(50%);
+}
+.video-wrapper {
+    display: flex;  
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+
+
+.image-wrapper {
+    text-align: center;
+      margin: 40px;
+      box-sizing: border-box;
+      flex: 2; /* Distribute available space equally among the flex items */
+  }
+  
+  hr.br {
+    width: 100%;
+    border: 1px solid white;
+    margin: 20px 0;
+  }
+  .container{
+    opacity: 0.8;
+    width: 80%;
+    margin-left: 10%;
+    background-color: white;
+    isolation: isolate;
+    color: black;
+    font-family: 'OCR A', monospace;
+    border-radius: 50px;  
+    margin-top: 40px; /* Adjusted margin-top value to create space */
+    padding: 20px;
+    margin-bottom: 100px;
+  }
+  
+  .soundframe{
+    align-items: center;
+    text-align: center;
+    opacity: 0.8;
+    width: 80%;
+    margin-left: 10%;
+    background-color: white;
+    isolation: isolate;
+    color: black;
+    font-family: 'OCR A', monospace;
+    border-radius: 50px;  
+    margin-top: 40px; /* Adjusted margin-top value to create space */
+    padding-top: 100px;
+    padding-bottom: 100px;
+    margin-bottom: 30px;
+    
+  }
+
+  .sound{
+    margin: 0;
+    padding: 0;
+    margin-top: -20px;
+    font-family: 'OCR A', monospace;
+    color: white;
+    width: 100%;
+    position: relative;
+}
+.sound::before{
+    background-image: url('/images/1banner.jpeg');
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    content: '';
+    inset: 0;
+    filter: brightness(50%);
+}
+h2{
+    font-weight: bold;
+    padding-bottom: 40px;
+    font-size: 40px;
+}
+.soundbtxt{
+    margin-top: 70px;
+    font-size: 30px;
+}
+.flogo{
+    height: 20vh;
+    width: 20vh;
+    margin: 0 auto; /* This centers the element horizontally */
+    display: block;
+    align-items: center;
+    text-align: center;
+}
+.ft{
+    color: black;
+    text-align: center;
+    font-family: 'OCR A', monospace;
+}
+.hr{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.BigPAU{
+    font-size: 13px;
+}

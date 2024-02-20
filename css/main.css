@@ -1,0 +1,331 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.langs{
+    font-family: 'OCR A', monospace;
+        color: #000000;
+        text-decoration: none;
+        padding: 40px 10px;
+        font-size: 30px;
+}
+.langs a{
+    
+    text-decoration: none;
+    
+}
+.langs.active{
+    background-color: red;
+}
+header{
+    width: 100%;
+    
+          
+}
+.logo{
+    background: linear-gradient(to right, 
+    rgb(89, 242, 142) 0%,         /* Left: rgba(42,179,237,255) */
+    rgb(75, 248, 116) 20%,        /* Mid-left: rgba(94,156,242,255) */
+    rgb(50, 238, 56) 40%,       /* Middle: rgba(127,143,245,255) */
+    rgb(50, 208, 74) 60%,       /* Mid-right: rgba(167,119,245,255) */
+    rgb(0, 143, 12) 100%        /* Right: rgba(199,97,247,255) */
+    );
+      /* you can change the colors based on your preference */
+      background-clip: text;
+      /*add this line, it defines how far the background should extend within an element, here we set it to text */
+      -webkit-background-clip: text;
+      /* add this line, for browsers compatibility */
+      -webkit-text-fill-color: transparent;
+      padding: 1px 30px;
+      margin-left: 50px;
+      text-decoration: none;
+      font-family: 'OCR A', monospace;
+      font-size: 35px;
+    font-weight: bold;
+}
+.title{
+    margin-top: 20px;
+}
+#nav{
+    display: flex;
+    background-color: #ffffff;
+    
+    
+}
+.navbar{
+    text-decoration: none;
+    font-family: 'OCR A', monospace;
+    font-size: 20px;
+    font-weight: bold;
+    background: linear-gradient(to right, 
+    rgb(89, 242, 142) 0%,         /* Left: rgba(42,179,237,255) */
+    rgb(75, 248, 116) 20%,        /* Mid-left: rgba(94,156,242,255) */
+    rgb(50, 238, 56) 40%,       /* Middle: rgba(127,143,245,255) */
+    rgb(50, 208, 74) 60%,       /* Mid-right: rgba(167,119,245,255) */
+    rgb(0, 143, 12) 100%        /* Right: rgba(199,97,247,255) */
+    );
+    /* you can change the colors based on your preference */
+    background-clip: text;
+    /*add this line, it defines how far the background should extend within an element, here we set it to text */
+    -webkit-background-clip: text;
+    /* add this line, for browsers compatibility */
+    -webkit-text-fill-color: transparent;
+}
+.navbar a{
+    text-decoration: none;
+    display: inline-block;
+    list-style: none;
+    padding: 50px 30px;
+}
+.banner1{
+    background-image: url('../images/1banner.jpeg');
+    background-size: cover;
+    width: 100%;
+    font-size: 35px;
+    height: 100vh;
+    font-family: 'OCR A', monospace;
+  
+}
+.header-txt{
+margin-left: 10%;
+margin-right: 40%;
+padding: 200px 0px;
+}
+.rectangle-button {
+    font-family: 'OCR A', monospace;
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid rgba(42, 179, 237, 1); /* Initial border color */
+    outline: none;
+    color: rgb(76, 170, 211); /* Text color */
+    font-size: 16px;
+    cursor: pointer;
+   
+}
+
+#about{
+    padding: 80px 0;
+    color: white;
+    background-color: #000000;
+    font-family: 'OCR A', monospace;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-col-1{
+    flex-basis: 35%;
+    margin-left: 5%;
+    margin-top: 50px;
+}
+.abtp{
+    height: 50vh;
+    border: 5px solid; 
+    border-image: linear-gradient(to right, 
+    rgba(47,116,131,255) 0%,        /* Left: rgba(42,179,237,255) */
+    rgba(101,194,149,255) 20%,       /* Mid-left: rgba(94,156,242,255) */
+    rgba(127,218,159,255) 40%,      /* Middle: rgba(127,143,245,255) */
+    rgba(195,241,147,255) 60%,      /* Mid-right: rgba(167,119,245,255) */
+    rgba(48,255,239,255) 100%  );
+    border-radius: 10px;
+    border-image-slice: 1;
+}
+.about-col-1 img{
+    width: 100%;
+    border-radius: 15px;
+}
+.about-col-2{
+    flex-basis: 55%;
+    
+}
+.abttxt{
+    margin-right: 20%;
+}
+.sub-title{
+    font-size: 60px;
+    font-weight: 600;
+    color: white;
+    font-family: 'OCR A', monospace;
+}
+.sub-title2{
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 60px;
+    font-weight: 600;
+    color: white;
+    font-family: 'OCR A', monospace;
+    
+    
+}
+.tab-titles{
+    display: flex;
+    margin: 20px 0 40px;
+    position: relative;
+}
+.tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+.tab-links::after{
+content: '';
+width: 0;
+height: 3px;
+background: #009c18;
+position: absolute;
+left: 0;
+bottom: -8px;
+transition: 0.5s;
+
+}
+.tab-links.active-link::after{
+    width: 50%;
+}
+.tab-contents ul li{
+    list-style: none;
+    margin: 10px 0;
+}
+.tab-contents ul li span{
+    color: #009c18;
+    font-size: 20px;
+}
+.tab-contents{
+    display: none;
+    margin-left: -32px;
+    margin-right: 20%;
+
+}
+.tab-contents.active-tab{
+    display: block;
+
+}
+
+.rectangle-button2{
+    font-family: 'OCR A', monospace;
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid rgb(42, 237, 130); /* Initial border color */
+    outline: none;
+    color: rgb(5, 136, 64); /* Text color */
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 45%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.rectangle-button2:hover{
+    color: black;
+    background: linear-gradient(to right, 
+    rgb(0, 143, 12) 0%,
+    rgb(50, 208, 74) 20%,
+    rgb(50, 238, 56) 40%, 
+    rgb(75, 248, 116) 60%, 
+     rgb(89, 242, 142) 100%         /* Left: rgba(42,179,237,255) */
+           /* Mid-left: rgba(94,156,242,255) */
+          /* Middle: rgba(127,143,245,255) */
+           /* Mid-right: rgba(167,119,245,255) */
+           /* Right: rgba(199,97,247,255) */
+    );
+    border-color: rgb(0, 143, 12);
+}
+/*portfolio*/
+#portfolio{
+    margin-top: -50px;
+    background-color: #212121;
+    padding-top: 50px;
+    padding-bottom: 200px;
+   
+}
+.work-list{ 
+    margin-left: 5%;
+    margin-right: 5%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap:40px;
+    margin-top: 50px;
+
+}
+.work{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.work img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+.layer{
+    font-family: 'OCR A', monospace;
+    color: white;
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0,0,0,0.6),#0a8704);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0px 0px;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.5s;
+}
+.layer h3{
+    font-weight: 500;
+    margin-top: 50px;
+    margin-bottom: 30px
+
+}
+.layer p{
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.layer a{
+    margin-top: 20px;
+    color: green;
+    text-decoration: none;
+    font-size: 30px;
+    line-height: 90px;
+    background: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 70%;
+    text-align: center;
+}
+.work:hover img{
+transform: scale(1.1);
+}
+.work:hover .layer{
+    height: 100%;
+}
+.footer-class{
+    margin-top: 30px;
+    background-color: white;
+    font-family: 'OCR A', monospace;
+    
+}
+.flogo{
+    height: 20vh;
+    width: 20vh;
+    margin: 0 auto; /* This centers the element horizontally */
+    display: block;
+    align-items: center;
+    text-align: center;
+}
+.ft{
+    color: black;
+    text-align: center;
+}
+.hr{
+    margin-left: 5%;
+    margin-right: 5%;
+}

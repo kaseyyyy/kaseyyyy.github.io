@@ -1,0 +1,97 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.banner5{
+
+    width: 100%;
+    height: 70vh;
+        position: relative;
+}
+.banner5::before{
+    background-image: url('../images/work-1.jpg');
+    background-size: cover;
+    content: '';
+    position: absolute;
+    inset: 0;
+    filter: brightness(50%);
+}
+.header-txt5{
+    margin-left: 15%;
+    
+    padding: 130px 0px;
+    }
+.txt4{
+    isolation: isolate;
+    color: white;
+    font-size: 70px;
+    letter-spacing: 10px;
+    font-family: 'OCR A', monospace;
+    border-radius: 5px solid;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: 
+    typing 3s steps(30),
+    cursor .9s step-end infinite alternate;
+}
+@keyframes cursor{
+    50% { border-color: transparent;}
+}
+@keyframes typing{
+    from { width: 0 } 
+}
+.ichiroku{
+    text-align: center;
+    align-items: center;
+}
+.name{
+    text-align: center;
+    font-size: 60px;
+    font-family: 'OCR A', monospace;
+}
+.twi{
+    font-size: 18px;
+    font-family: 'OCR A', monospace;
+    margin-left: 20%;
+    font-weight: bold;
+}
+.rectangle-button3{
+    font-family: 'OCR A', monospace;
+    display: block; /* Use block instead of inline-block */
+    margin: 50px auto; 
+    padding: 10px 100px;
+    border: 2px solid rgb(42, 237, 130); /* Initial border color */
+    outline: none;
+    color: rgb(5, 136, 64); /* Text color */
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 50px;
+    text-align: center;
+    align-items: center;
+}
+
+.rectangle-button3:hover {
+    background: linear-gradient(to right, 
+    rgb(0, 143, 12) 0%,
+    rgb(50, 208, 74) 20%,
+    rgb(50, 238, 56) 40%, 
+    rgb(75, 248, 116) 60%, 
+     rgb(89, 242, 142) 100%         /* Left: rgba(42,179,237,255) */
+           /* Mid-left: rgba(94,156,242,255) */
+          /* Middle: rgba(127,143,245,255) */
+           /* Mid-right: rgba(167,119,245,255) */
+           /* Right: rgba(199,97,247,255) */
+    );
+    border-color: rgb(0, 143, 12);
+  color: #000000;
+ 
+}
+.bt{
+    margin-top: 100px;
+}
+.tt{
+    font-family: 'OCR A', monospace;
+    margin-top: 50px;
+    margin-left: 10%;
+}

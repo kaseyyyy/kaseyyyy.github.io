@@ -1,0 +1,310 @@
+body{
+margin: 0;
+padding: 0;
+font-family: 'OCR A', monospace;
+}
+#snav{
+    
+    background-color: black;
+   
+}
+.banner2{
+
+    width: 100%;
+    height: 70vh;
+        position: relative;
+}
+.banner2::before{
+    background-image: url('../images/work-1.jpg');
+    background-size: cover;
+    content: '';
+    position: absolute;
+    inset: 0;
+    filter: brightness(50%);
+}
+.header-txt2{
+    margin-left: 15%;
+    
+    padding: 70px 0px;
+    }
+    @media (max-width: 600px) {
+        .header-txt2 {
+          font-size: 16px; /* Change font size for smaller screens */
+        }
+      }
+.txt{
+    
+    isolation: isolate;
+    color: white;
+    font-size: 90px;
+    letter-spacing: 10px;
+    font-family: 'OCR A', monospace;
+    border-radius: 5px solid;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: 
+    typing 3s steps(30),
+    cursor .9s step-end infinite alternate;
+}
+@keyframes cursor{
+    50% { border-color: transparent;}
+}
+@keyframes typing{
+    from { width: 0 } 
+}
+.snavbar{
+  
+    padding-top: 40px;
+    padding-bottom: 70px;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'OCR A', monospace;
+    font-size: 30px;
+   /* background: linear-gradient(to right, 
+    rgb(89, 242, 142) 0%,         /* Left: rgba(42,179,237,255) */
+  /*    rgb(75, 248, 116) 20%,        /* Mid-left: rgba(94,156,242,255) */
+  /*    rgb(50, 238, 56) 40%,       /* Middle: rgba(127,143,245,255) */
+  /*    rgb(50, 208, 74) 60%,       /* Mid-right: rgba(167,119,245,255) */
+  /*    rgb(0, 143, 12) 100%        /* Right: rgba(199,97,247,255) */
+  /*    );
+    /* you can change the colors based on your preference */
+   /*   background-clip: text;
+    /*add this line, it defines how far the background should extend within an element, here we set it to text */
+    /*  -webkit-background-clip: text;
+    /* add this line, for browsers compatibility 
+     -webkit-text-fill-color: transparent;*/
+}
+
+.snavbar a{
+    
+    border: 2px solid rgb(31, 212, 113); /* Initial border color */
+    outline: none;
+    font-size: 18px;
+   display: flex;
+    text-decoration: none;
+    display: inline-block;
+    list-style: none;
+    padding: 10px 10px;
+    font-weight: bold;
+    transition: background 0.3s ease, border 0.3s ease, color 0.3s ease; /* Add transition for background, border, and text color */
+    color: rgb(95, 169, 90); /* Set the default text color */
+}
+.snavbar a:hover{
+    color: black;
+    background: linear-gradient(to right, 
+    rgb(0, 143, 12) 0%,
+    rgb(50, 208, 74) 20%,
+    rgb(50, 238, 56) 40%, 
+    rgb(75, 248, 116) 60%, 
+     rgb(89, 242, 142) 100%         /* Left: rgba(42,179,237,255) */
+           /* Mid-left: rgba(94,156,242,255) */
+          /* Middle: rgba(127,143,245,255) */
+           /* Mid-right: rgba(167,119,245,255) */
+           /* Right: rgba(199,97,247,255) */
+    );
+    border-color: rgb(0, 143, 12);
+    
+    /* you can change the colors based on your preference */
+  
+}
+h4{
+font-size: 30px;
+
+}
+h5{
+    padding-top: 20px;
+    
+    font-size: 35px;
+    font-family: 'OCR A', monospace;
+}
+#short{
+    font-family: 'OCR A', monospace;
+  /*  background-image: url('../images/bg1.jpg'); */
+    background-size: cover;
+    width: 100%;
+}
+.short-txt{
+    margin-left: 15%;
+    
+}
+.read-more-btn{
+    color: rgb(42, 180, 244);
+}
+.read-more-text {
+    display: none;
+}
+
+.read-more-text--show {
+    display: inline;
+}
+#medium{
+    font-family: 'Courier New', Courier, monospace;
+  /*  background-image: url('../images/bg1.jpg'); */
+    background-size: cover;
+    width: 100%;
+}
+.medium-txt{
+    margin-left: 15%;
+}
+.br{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+#long{
+    font-family: 'Courier New', Courier, monospace;
+  
+    background-size: cover;
+    width: 100%;
+}
+.long-txt{
+    margin-left: 15%;
+    padding-right: 15%;
+}
+.section-1{
+       margin-top: -59px;
+    position: relative;
+    
+    
+}
+.section-1::before{
+background-image: url('/images/1banner.jpeg');
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    content: '';
+    inset: 0;
+    filter: brightness(50%);
+    
+}
+.section-1-txt{
+    opacity: 0.8;
+    width: 80%;
+    margin-left: 10%;
+    background-color: white;
+    isolation: isolate;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 50px;  
+    margin-top: 40px; /* Adjusted margin-top value to create space */
+    padding: 20px;
+    margin-bottom: 30px;
+}
+.section-2{
+    margin-top: -30px;
+    position: relative;
+}
+.section-2::before{
+    background-image: url('/images/1banner.jpeg');
+        background-size: cover;
+        background-position: center;
+        position: absolute;
+        content: '';
+        inset: 0;
+        filter: brightness(50%);
+        
+    }
+    .section-2-txt{
+        opacity: 0.8;
+    width: 80%;
+    margin-left: 10%;
+    background-color: white;
+    isolation: isolate;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 50px;  
+    margin-top: 40px; /* Adjusted margin-top value to create space */
+    padding: 20px;
+    margin-bottom: 30px;
+    }
+    .section-3{
+        margin-top: -40px;
+        position: relative;
+    }
+    .section-3::before{
+        background-image: url('/images/1banner.jpeg');
+            background-size: cover;
+            background-position: center;
+            position: absolute;
+            content: '';
+            inset: 0;
+            filter: brightness(50%);
+            
+        }
+        .section-3-txt{
+            opacity: 0.8;
+        width: 80%;
+        margin-left: 10%;
+        background-color: white;
+        isolation: isolate;
+        color: black;
+        font-family: 'Courier New', Courier, monospace;
+        border-radius: 50px;  
+        margin-top: 40px; /* Adjusted margin-top value to create space */
+        padding: 20px;
+        margin-bottom: 0px;
+        }
+    
+
+@media only screen and (max-width: 768px) {
+    .section-1-txt {
+        font-size: 10px; /* Adjust font size for smaller screens */
+    }
+}
+
+#BGM{
+    font-family: 'Courier New', Courier, monospace;
+   
+    width: 100%;
+}
+.BGM-txt{
+    margin-left: 15%;
+}
+#ori{
+    font-family: 'Courier New', Courier, monospace;
+  /*  background-image: url('../images/bg1.jpg'); */
+    background-size: cover;
+    width: 100%;
+}
+.ori-txt{
+    margin-left: 15%;
+}
+#Cover{
+    font-family: 'Courier New', Courier, monospace;
+  /*  background-image: url('../images/bg1.jpg'); */
+    background-size: cover;
+    width: 100%;
+}
+.Cover-txt{
+    margin-left: 15%;
+}
+#mix{
+    font-family: 'Courier New', Courier, monospace;
+  /*  background-image: url('../images/bg1.jpg'); */
+    background-size: cover;
+    width: 100%;
+}
+.mix-txt{
+    margin-left: 15%;
+}
+#smix{
+    font-family: 'Courier New', Courier, monospace;
+  /*  background-image: url('../images/bg1.jpg'); */
+    background-size: cover;
+    width: 100%;
+}
+.smix-txt{
+    margin-left: 15%;
+}
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
